@@ -1,4 +1,20 @@
 ﻿body {
     background-color: #1e1e1e;
+    margin: 50px;
+    font-family: helvetica;
+}
 
+#heading {
+    font-family: helvetica;
+    font-style:oblique;
+    font-stretch: 30px;
+    text-align: center;
+    font-size: 78px;
+    font-color: #ffffff;
+}
+
+p {
+    font-color: #ffffff;
+    font-size: 14px;
+    
 }
