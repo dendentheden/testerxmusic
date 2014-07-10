@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
@@ -7,21 +8,27 @@
     <meta name="author" content="">
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Xmusic</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="xmusictest/css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="xmusictest/css/simple-sidebar.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            color: #C0C0C0;
+            font-family: Aharoni;
+            background-color: black;
+        }
+    </style>
 
 </head>
 
 <body>
-
-    <div id="heading">XMUSIC SEARCH</div>
-
+    <div id="heading" style="font-family:FangSong">XMUSIC SEARCH</div>
     <div id="wrapper">
 
         <!-- Sidebar -->
@@ -29,11 +36,18 @@
             .sidebar-nav {
                 text-align: center;
             }
+
             li {
                 display: inline;
             }
-            a{
+
+            a {
                 display: inline-block;
+                color: crimson;
+            }
+
+            sidebar-brand {
+                color: crimson;
             }
         </style>
         <div id="sidebar-wrapper">
@@ -69,11 +83,15 @@
         <div id="page-content-wrapper">
             <div class="content-header">
                 <h1>
-                    <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
+                    <!--<a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a> -->
                     Simple Sidebar
                 </h1>
             </div>
             <!-- Keep all page content within the page-content inset div! -->
+            <!--<form name="input" action="demo_form_action.asp" method="get">
+                Username: <input type="text" name="user">
+                <input type="submit" value="Submit">
+            </form> -->
             <div class="page-content inset">
                 <div class="row">
                     <div class="col-md-12">
@@ -106,10 +124,10 @@
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
-    });
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("active");
+        });
     </script>
 </body>
 
